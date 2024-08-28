@@ -1,0 +1,139 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:"LXGW WenKai Mono TC" ;
+}
+
+.return {
+    display: flex;
+    justify-content: left;
+    padding: 15px;
+}
+
+
+.container {
+    display: flex;
+    align-items: start;
+    height: 100vh;
+}
+
+.forms, .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* 竖线样式 */
+.divided {
+    width: 1px; 
+    height: 80%; 
+    background-color: #faf8f8; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+.right {
+    padding-top: 150px;
+    padding-left: 20px; /* 右侧内容的左侧内间距 */
+    padding-right: 20px; 
+    font-size: 20px;/* 右侧内容的右侧内间距，确保内容居中显示不受边框影响 */
+}
+/* 字体及背景图片 */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(/功课.html/webwxgetmsgimg.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center; 
+    height: 100vh;
+}
+/* 背景图片伪元素及透明度调整 */
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3); 
+    z-index: -1;
+}
+/* 表单居中及字体调整 */
+.forms {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+}
+/* 隐私条款字体大小 */
+label[for="newspaper"] {
+    font-size: 20px;
+}
+label[for="terms"] {
+    font-size: 20px;
+}
+/* 输入框样式 */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+    width: 30%; 
+    padding: 10px;
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+}
+/* 焦距输入框时样式 */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea {
+    border-color: cadetblue;
+    outline: 2px solid #acd0f6;
+    background-color: #bcecee;
+}
+
+/* 复选框单选框样式 */
+input[type="checkbox"],
+input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* 按钮样式 */
+button {
+    background-color: #8bbef4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+
+.right .text-content {
+    flex: 1; /* 让文本容器占用除图片外的所有可用空间 */
+    max-width: 600px; /* 设置文本容器的最大宽度 */
+    padding-right: 20px; /* 右侧间距，与图片分开 */
+}

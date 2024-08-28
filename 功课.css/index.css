@@ -1,0 +1,358 @@
+/* 基础设置 */
+:root {
+        --clr-blue-0: #edfcfe;
+        --clr-blue-1: #d2f6fb;
+        --clr-blue-2: #b9eef8;
+        --clr-blue-3: #70daf0;
+        --clr-blue-4: #2fc0e1;
+        /* *深蓝系列 */
+        --clr-deepblue-0: #13a3c7;
+        --clr-deepblue-1: #1382a7;
+        --clr-deepblue-2: #166988;
+        --clr-deepblue-3: #1b566f;
+        --clr-deepblue-4: #1b485e;
+        --clr-deepblue-5: #0c2e40;
+        --transition: all 0.3s linear;
+        --spacing: 0.25rem;
+        --radius: 0.25rem;
+        --light-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        --dark-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "LXGW WenKai Mono TC", monospace;
+    margin: 0;
+    padding: 0;
+    background-color: var(--clr-blue-0);
+}
+html{
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+/* #region顶部导航条start */
+.navbar {
+    /* position: sticky; */
+    top: 0px;
+    background: transparent;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 100;
+    position: fixed;
+}
+.navbar.scrolled {
+    background-color: var(--clr-blue-1);
+    transition: background-color 0.3s ease;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-logo {
+    font-size: 18px;
+    color: #fff;
+}
+.navbar-menu {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none; /* 移除下划线 */
+    color: inherit; 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: var(--transition);
+}
+.navbar-menu a:hover {
+    color: var(--clr-deepblue-2);
+}
+.btn-gold {
+    background: linear-gradient(to right,#9eccf1,#fff);
+    color: black;
+    border: 1px solid #d8f6f7;
+    padding: 10px 15px;
+    border-radius: var(--radius);
+    cursor: pointer;
+}
+.btn-gold:hover {
+    background: transparent;
+}
+.fa-moon {
+    color: #e1eef8;
+    font-weight: 200;
+    font-size: 22px;
+}
+/* Mobile menu toggle */
+.menu-hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 3px 0;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display:none ;
+        flex-direction: row;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px; /* Adjust based on navbar height */
+        left: 0;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-hamburger {
+        display: flex;
+    }
+}
+
+/* *头部大图样式 */
+.header {
+    background-image: linear-gradient(rgba(244, 252, 255, 0.05),rgba(0,0,0,0.4)),url(/myworkimg/highquality/index.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    top:0px;
+}
+
+.header-content {
+    z-index: 1;
+}
+.header-content h1 {
+    height: 40vh;
+    font-size: 60px;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+
+.text-left {
+    margin-left: 4rem;
+    font-size: 20px;
+    max-width: 40%;
+}
+.btn-blue01 {
+    margin-top: 1.5rem;
+    text-decoration: none;
+}
+.btn-blue {
+    background: linear-gradient(to right,#9eccf1,#fff);
+    color: rgb(224, 245, 246);
+    border: 1px solid #d0f6f7;
+    padding: 10px 15px;
+    border-radius: var(--radius);
+    cursor: pointer;
+
+}
+.btn-blue:hover {
+    background: transparent;
+}
+
+/* *下部图片文字 */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* 这会在盒子之间提供平均的空间分布 */
+    align-items: stretch; /* 使所有子项目的高度相同 */
+}
+.featured-content {
+    background-color: #b1d9f8;
+    padding: 50px 0;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 确保内容均匀分布在盒子内部 */
+    min-height: 500px; /* 根据内容调整这个值以找到适合的最小高度 */
+    margin-top: 50px;
+    text-align: center;
+    background-color: rgba(226, 242, 252, 0.932);
+    border-radius: 0.5rem;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.feature-box img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+.feature-box + .feature-box {
+    margin-left: 20px;
+}
+.feature-box h3 {
+    color:var(--clr-deepblue-4);
+    font-weight: bold;
+}
+.feature-box h4 {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--clr-deepblue-3);
+}
+
+.feature-box p {
+    color: #666;
+    font-size: 15px;
+    margin-top: 10px;
+    line-height: 200%;
+
+} 
+
+
+
+
+/* .container {
+    width: 1190px;
+    margin: 0 auto;
+    
+}
+/* #region顶部导航条start */
+/* .topbar {
+    height: 70px;
+    background: transparent;
+}
+.welcome {
+    height: 20px;
+    line-height: 30px;
+    font-size: 60px;
+    color: #666;
+}
+.welcome span,.welcome a {
+    font-size: 20px;
+    
+}
+.welcome .hello {
+    margin-right: 18px;
+}
+.welcome span {
+    margin-right: 0.1px;
+}
+.welcome a {
+    margin-left: 0px;
+    text-decoration: none;
+} */
+
+.toprightlist {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 15px;
+    list-style-type: none;
+    font-size: large;
+    color: rgb(67, 141, 238);
+}
+.toprightlist a {
+    text-decoration: none; /* 移除下划线 */
+    color: inherit; /* 使链接颜色与周围文本相同 */
+}
+.toprightlist li {
+    margin-right: 20px;
+}
+.toprightlist li:last-child {
+    margin-right: 0;
+}
+.fa-regular {
+    margin: 0 5px;
+}
+
+
+/* #endregion顶部导航条end */
+
+/* *footer部分 */
+.footer {
+    background-color: #4779aa; /* 深色背景 */
+    color: #fff; /* 白色文字 */
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* 设置字体 */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-icons {
+    margin-bottom: 15px;
+}
+
+.footer-icon {
+    color: #fff; /* 图标颜色 */
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.footer-icon:hover {
+    color: #65aed5; /* 悬停时图标颜色变化 */
+}
+
+.footer-text p {
+    margin: 5px 0;
+}
+
+.email-link {
+    color: #e5f5e7; /* 邮件链接颜色 */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.email-link:hover {
+    color: #fff; /* 悬停时文字颜色变化 */
+}
+
+.copyright {
+    font-size: 14px;
+    color: #e1e8f6; /* 较浅的灰色 */
+    margin-top: 15px;
+    border-top: 1px solid #444; /* 上边框 */
+    padding-top: 10px;
+}

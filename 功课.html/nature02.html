@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 引入icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- 引入谷歌字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=LXGW+WenKai+Mono+TC:wght@300;400&display=swap" rel="stylesheet">
+<!-- 引入lib -->
+ <link rel="stylesheet" href="/lib/animate/animate.min.css">
+ <link rel="stylesheet" href="/lib/owlcarousel/assets/owl.carousel.min.css">
+ <link rel="stylesheet" href="/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css">
+    <!-- 引入bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- 引入网页标签图标 -->
+    <link rel="shortcut icon" href="/favicon.ico" class="favicon">
+    <!-- 引入css -->
+    <link rel="stylesheet" href="/功课.css/nature02.css">
+    <title>自然景观</title>
+</head>
+<body>
+    <nav class="sticky-top navbar" id="navbar">
+        <!-- 版心 -->
+        <div class="container">
+            <!-- 左侧欢迎区 -->
+            <div class="navbar-logo">
+                <span class="hello">歡迎進入雲南旅遊網，</span>
+                <span>请</span>
+                <button class="btn-gold"><a href="./log.html" target="_blank" class="text-dark" style="text-decoration: none;">注册/登录</a></button>
+                </div>
+            <!-- 右侧导航区 -->
+                <ul class="navbar-menu">
+                    <li><i class="fa-regular fa-moon"></i><a href="./index.html" target="_blank">首页</a></li>
+                    <li class="nav-item dropdown"><i class="fa-regular fa-moon"></i>
+                        <a href="./nature01.html" target="_blank" class="dropdown-toggle" type="button" data-toggle="dropdown">
+                        自然景觀</a>
+                        <div class="dropdown-menu" style="background-color: #686a5e;padding: 15px; width: 200px;">
+                            <a href="./nature01.html#container01">大理洱海</a><br>
+                            <a href="#container01">虎跳峡/玉龙雪山</a>
+                        </div>
+                    </li>
+                    <li><i class="fa-regular fa-moon"></i><a href="./humanculture.html" target="_blank">精彩人文</a></li>
+                    <li><i class="fa-regular fa-moon"></i><a href="./food.html" target="_blank">特色美食</a></li>
+                    <li><i class="fa-regular fa-moon"></i><a href="./log.html" target="_blank">聯系我們</a></li>
+                </ul>
+                <div class="menu-hamburger" id="menu-hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+        </div>
+    </nav>
+<!-- ?主图轮播部分 -->
+    <div id="mainCarousel" class="carousel slide" data-ride="carousel">
+        <!-- ? 主图滑片 -->
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#mainCarousel" data-slide-to="0"></li>
+                <li data-target="#mainCarousel" data-slide-to="1"></li>
+                <li data-target="#mainCarousel" data-slide-to="2"></li>                        
+            </ol> 
+        <div class="carousel-inner">
+<!-- ?第一张轮播图 -->
+            <div class="carousel-item active">
+                <img src="/myworkimg/highquality/dalierhai.jpg" class="d-block w-100" alt="dali sea">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>大理洱海</h1>
+                    <p>- “如诗如画的洱海，宁静祥和，心灵的栖息之所。”</p>
+                    <a href="nature01.html#feature-box" class="btn btn-primary" style="background-color: #686a58; border: black;">探索更多</a>
+                </div>
+            </div>
+            <!-- ?第二张轮播图 -->
+            <div class="carousel-item">
+                <img src="/myworkimg/highquality/yulongxueshan.jpg" class="d-block w-100" alt="snow mountain">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>玉龙雪山</h1>
+                    <p>- “纳西族心中的神山，雪峰连绵，壮丽至极。”</p>
+                    <a href="#" class="btn btn-primary" style="background-color: #c7e4f6; border: rgb(215, 242, 245)">探索更多</a>
+                </div>
+            </div>
+            <!-- ?第三张轮播图 -->
+            <div class="carousel-item">
+                <img src="/myworkimg/hutiaoxia.jpg" class="d-block w-100" alt="snow mountain">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>香格里拉虎跳峡</h1>
+                    <p>- “体验世界最深峡谷之一的震撼，感受大自然的伟力。”</p>
+                    <a href="#" class="btn btn-primary" style="background-color: #6e6933; border: black">探索更多</a>
+                </div>
+            </div>
+        </div>
+        <!-- !轮播导航箭头 -->
+        <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- !虎跳峡 -->
+    <section class="container01 py-5" id="container01">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="/myworkimg/hutiaoxia02.jpg" class="wow fadeInUp" alt="hutiaoxia"></div>
+            <div class="col-md-6">
+                <div class="hutiaoxiawenzi">
+                <h2 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">虎跳峡</h2>
+                <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                峡谷形态：虎跳峡分为上虎跳、中虎跳、下虎跳三段，每段都有其独特的景观。上虎跳是大多数游客打卡的地方，登临观景台可以看到比壶口瀑布还壮丽的滔天巨浪。中虎跳则以礁石密布、两岸峭壁兀立而著称，被誉为“世界奇观”。下虎跳则属于未开发区域，建议慎往。
+<br>虎跳石：位于中虎跳景区的金沙江心，相传是玉龙雪山斩落哈巴雪山的头颅坠落江中而形成，曾有猛虎踩石一跃渡江而去，因此而得名。 虎跳石是虎跳峡的标志性景观之一。
+<br>水流：金沙江由北向南流经虎跳峡，江面在峡谷中变得狭窄，水流湍急，形成了许多壮观的瀑布和漩涡。
+<br>传说故事：关于虎跳峡的传说众多，其中最著名的就是老虎踩石一跃渡江的故事。这些传说为虎跳峡增添了几分神秘和浪漫的色彩。
+<br>徒步文化：虎跳峡是徒步爱好者的天堂，境内有多条徒步路线被誉为“世界十大经典徒步路线之一”。徒步虎跳峡不仅可以欣赏到壮丽的自然风光，还可以体验到独特的藏族文化。
+                </p>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- !玉龙雪山section -->
+    <section class="container02 py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 order-md-2">
+                <img src="/myworkimg/yulong2.jpg" alt="玉龙雪山" class="wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;"></div>
+            <div class="col-md-6 order-md-1">
+                <div class="xueshanwenzi">
+                <h2 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">玉龙雪山</h2>
+                <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                    玉龙雪山是纳西族及丽江各民族心目中一座神圣的山，纳西族的保护神“三朵”就是玉龙雪山的化身，至今丽江还举行每年一度盛大的“三朵节”。
+                    唐朝南诏国异牟寻时代，南诏国主异牟寻封岳拜山，曾封赠玉龙雪山为北岳，至今白沙村北北岳庙尚存，仍然庭院幽深，佛面生辉。拜山朝圣者不绝于途。元代初年，元世祖忽必烈到丽江时，曾封玉龙雪山为“大圣雪石北岳安邦景帝”，至今白沙村北北岳庙尚存，仍然庭院幽深，佛面生辉。拜山朝圣者不绝于途。玉龙雪山凭其迷人的景观、神秘的传说和至今尚是无人征服的处女峰而令人心驰神往。
+                </p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-text">                
+                    <div class="footer-icons">
+                            <a href="facebook.com" class="footer-icon"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="instagram.com" class="footer-icon"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="twitter.com" class="footer-icon"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <br>
+                    <p>網站作者: Charlotte Tu&nbsp;</p>
+                    <p class="middle-contect">
+                        <a href="mailto:tusiqi01222@outlook.com" class="email-link">tusiqi01222@outlook.com</a>
+                    </p>
+                </div>
+                <p class="copyright">copyright &copy; 
+                    2024 Charlotte Tu all right reserved（以上圖片均為圖圖本人拍攝，請勿盜用）</p>
+            </div>
+        </footer>
+<!-- 引入js轮播lib -->
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<script src="/lib/wow/wow.min.js"></script>
+<script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+<script>
+    new WOW({ boxClass: 'wow', animateClass: 'animated', offset: 0, mobile: true, live: true, repeat: true }).init();
+</script>
+<script>
+    $(".testimonial-carousel").owlCarousel({
+autoplay: true,
+autoplayTimeout: 2000,
+smartSpeed: 500,
+// center: true,
+margin: 10,
+dots: true,
+loop: true,
+nav: false,
+responsive: {
+0: {
+  items: 1,
+},
+768: {
+  items: 2,
+},
+992: {
+  items: 3,
+},
+},
+});
+
+(jQuery);
+
+</script>
+<script src="/lib/easing/easing.min.js"></script>
+<script src="/lib/waypoints/waypoints.min.js"></script>
+<script>
+    const mobileHamburger = document.getElementById('menu-hamburger');
+    const navLinks = document.querySelector('.navbar-menu');
+    
+    mobileHamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });</script>
+<!-- <script src="/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script> -->
+        <!-- 引入bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/mhDoLbDldZc3qpsJHpLogda//BVZbgYuw6kof4u2FrCedxOtgRZDTHgHUhOCVim" crossorigin="anonymous"></script> -->
+        <!-- 引入js -->
+        <!-- <script src="/js/功课js/index.js"></script> -->
+        </body>
+        </html>
